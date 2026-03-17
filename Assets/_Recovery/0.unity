@@ -270,14 +270,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 334854341}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: 0.5212761, z: -0, w: 0.85338813}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9162191504324958098}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 62.836, z: 0}
 --- !u!1 &430028261
 GameObject:
   m_ObjectHideFlags: 0
@@ -291,7 +291,7 @@ GameObject:
   - component: {fileID: 430028264}
   - component: {fileID: 430028263}
   m_Layer: 0
-  m_Name: SpringRoot
+  m_Name: WinderRoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -305,14 +305,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 430028261}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.5666671, y: -0.4232112, z: -0.56658393, w: -0.4228043}
+  m_LocalRotation: {x: 0.5651593, y: 0.4252058, z: -0.56477493, w: 0.4252346}
   m_LocalPosition: {x: 0.00020408025, y: 0.00022830992, z: -0.0001381984}
   m_LocalScale: {x: 1.7608483, y: 3.4471345, z: 1.2347406}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5786860570355864564}
   m_Father: {fileID: 3516535136236942801}
-  m_LocalEulerAnglesHint: {x: -433.486, y: 269.912, z: -179.893}
+  m_LocalEulerAnglesHint: {x: 106.06601, y: 89.915, z: -0.06100464}
 --- !u!114 &430028263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -326,8 +326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WinderRootSpin
   rotateSpeed: 2
-  returnSpeed: 15
-  currentAngle: 0
+  returnSpeed: 10
 --- !u!59 &430028264
 HingeJoint:
   m_ObjectHideFlags: 0
@@ -425,58 +424,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -16.403, z: 0}
---- !u!1 &1115455968
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1115455969}
-  - component: {fileID: 1115455970}
-  m_Layer: 0
-  m_Name: Gear33TeethRoot
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1115455969
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1115455968}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.000000073577155, y: 0.0000000044761466, z: -0.017020242, w: 0.99985516}
-  m_LocalPosition: {x: 0.00019937461, y: 0.0002280462, z: -0.00015505576}
-  m_LocalScale: {x: 2.3061275, y: 2.3061275, z: 0.27154437}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 5163531484958465877}
-  - {fileID: 868568296755349052}
-  - {fileID: 8496400939038799317}
-  - {fileID: 7230047191058371814}
-  - {fileID: 6862228633694745794}
-  m_Father: {fileID: 3516535136236942801}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1115455970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1115455968}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c449fcb40e2723b47b1344994900bd9b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Gear33TeethController
-  winder: {fileID: 430028263}
-  gearRatio: 1
-  gearAngle: 0
 --- !u!1 &1777311859
 GameObject:
   m_ObjectHideFlags: 0
@@ -986,7 +933,6 @@ GameObject:
   - component: {fileID: 6119524959529736067}
   - component: {fileID: 6313946220620107197}
   - component: {fileID: 2804384584553220372}
-  - component: {fileID: 6313946220620107198}
   m_Layer: 0
   m_Name: Gear6Teeth
   m_TagString: Untagged
@@ -1099,12 +1045,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3640883983158528036}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 3.2934216e-16, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -7.0891605e-11, y: 0.0000000066279235, z: -0.017020237, w: 0.99985516}
+  m_LocalPosition: {x: 0.00019937463, y: 0.000228046, z: -0.00015505568}
+  m_LocalScale: {x: 2.3061275, y: 2.3061275, z: 0.27154434}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1115455969}
+  m_Father: {fileID: 3516535136236942801}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &901147566979030070
 Transform:
@@ -1329,7 +1275,7 @@ GameObject:
   - component: {fileID: 246111821717054908}
   - component: {fileID: 4931880608417472306}
   m_Layer: 0
-  m_Name: InternalRatchtTwo
+  m_Name: InternalRatcht2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1347,7 +1293,7 @@ GameObject:
   - component: {fileID: 6346269176379649997}
   - component: {fileID: 2821735965972731720}
   m_Layer: 0
-  m_Name: InternalRatchtOne
+  m_Name: InternalRatcht1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1382,7 +1328,6 @@ GameObject:
   - component: {fileID: 2920831159351249524}
   - component: {fileID: 6677690344539103854}
   - component: {fileID: 6298980254216280801}
-  - component: {fileID: 6677690344539103855}
   m_Layer: 0
   m_Name: Gear46Teeth
   m_TagString: Untagged
@@ -1525,7 +1470,6 @@ GameObject:
   - component: {fileID: 5247922589813347431}
   - component: {fileID: 6626429713862168401}
   - component: {fileID: 3971576852833579552}
-  - component: {fileID: 6626429713862168402}
   m_Layer: 0
   m_Name: Gear8Teeth
   m_TagString: Untagged
@@ -1620,9 +1564,8 @@ GameObject:
   - component: {fileID: 7479178784579014802}
   - component: {fileID: 4726421621367470360}
   - component: {fileID: 7261208959458127857}
-  - component: {fileID: 7479178784579014803}
   m_Layer: 0
-  m_Name: SpeedController
+  m_Name: Damper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2195,7 +2138,6 @@ GameObject:
   - component: {fileID: 3663912962983185669}
   - component: {fileID: 7671193815537364496}
   - component: {fileID: 7671193815537364497}
-  - component: {fileID: 7671193815537364499}
   m_Layer: 0
   m_Name: SpringSystem
   m_TagString: Untagged
@@ -2213,7 +2155,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1719168219726316283}
   m_Layer: 0
-  m_Name: GearSystemOne
+  m_Name: GearSystem1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2497,7 +2439,6 @@ GameObject:
   - component: {fileID: 4251924305570909442}
   - component: {fileID: 6482953269725628380}
   - component: {fileID: 7589067228510888227}
-  - component: {fileID: 7589067228510888228}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -2568,7 +2509,11 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3163894627741458843}
-  - {fileID: 1115455969}
+  - {fileID: 5163531484958465877}
+  - {fileID: 8496400939038799317}
+  - {fileID: 7230047191058371814}
+  - {fileID: 6862228633694745794}
+  - {fileID: 868568296755349052}
   - {fileID: 430028262}
   m_Father: {fileID: 9162191504324958098}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2618,7 +2563,7 @@ GameObject:
   - component: {fileID: 7941493531775527261}
   - component: {fileID: 6474763970739098178}
   m_Layer: 0
-  m_Name: InternalRatchtFour
+  m_Name: InternalRatcht4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3076,7 +3021,7 @@ GameObject:
   m_Component:
   - component: {fileID: 471050544009335731}
   m_Layer: 0
-  m_Name: GearSystemThree
+  m_Name: GearSystem3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3152,7 +3097,6 @@ GameObject:
   - component: {fileID: 651705734508781050}
   - component: {fileID: 7164271150685815261}
   - component: {fileID: 5867610506172040089}
-  - component: {fileID: 7164271150685815262}
   m_Layer: 0
   m_Name: Gear24Teeth
   m_TagString: Untagged
@@ -3418,12 +3362,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5154818184092636897}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 3.2934216e-16, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -7.0891605e-11, y: 0.0000000066279235, z: -0.017020237, w: 0.99985516}
+  m_LocalPosition: {x: 0.00019937463, y: 0.00022804602, z: -0.00015505568}
+  m_LocalScale: {x: 2.3061275, y: 2.3061275, z: 0.27154434}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1115455969}
+  m_Father: {fileID: 3516535136236942801}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &5247922589813347431
 Transform:
@@ -3567,7 +3511,6 @@ GameObject:
   - component: {fileID: 7889988916456977533}
   - component: {fileID: 1098348056907045887}
   - component: {fileID: 7284800783354611152}
-  - component: {fileID: 7889988916456977534}
   m_Layer: 0
   m_Name: Gear12Teeth
   m_TagString: Untagged
@@ -3725,7 +3668,7 @@ GameObject:
   - component: {fileID: 1843360685280202148}
   - component: {fileID: 970458890962012242}
   m_Layer: 0
-  m_Name: InternalRatchtThree
+  m_Name: InternalRatcht3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3814,7 +3757,6 @@ GameObject:
   - component: {fileID: 986828622420632814}
   - component: {fileID: 8041606201778313684}
   - component: {fileID: 1474537900995974415}
-  - component: {fileID: 8041606201778313685}
   m_Layer: 0
   m_Name: Gear38Teeth
   m_TagString: Untagged
@@ -3946,7 +3888,6 @@ GameObject:
   - component: {fileID: 4806371803131886061}
   - component: {fileID: 2914607772706367838}
   - component: {fileID: 6226414839538562054}
-  - component: {fileID: 6226414839538562055}
   m_Layer: 0
   m_Name: ToneCylinder
   m_TagString: Untagged
@@ -4003,21 +3944,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &6226414839538562055
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6148993409711588618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a203522218c09c49a37e46281c39cb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GearSystemOneCylinderSpin
-  previousGear: {fileID: 1115455970}
-  gearRatio: 2.75
-  gearAngle: 0
 --- !u!23 &6298980254216280801
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4093,21 +4019,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 637467405311711977}
   m_Mesh: {fileID: -1370558582302304494, guid: 4e57df6dcd71f9a4a8c5709d08f7bf7f, type: 3}
---- !u!114 &6313946220620107198
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 637467405311711977}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62980285b36c8fb4192afcede51b976e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Gear6TeethSpin
-  previousGear: {fileID: 8041606201778313685}
-  gearRatio: 6.33
-  gearAngle: 0
 --- !u!1 &6344912501155995894
 GameObject:
   m_ObjectHideFlags: 0
@@ -4232,21 +4143,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1691292736946054389}
   m_Mesh: {fileID: -7540004295693137496, guid: 4e57df6dcd71f9a4a8c5709d08f7bf7f, type: 3}
---- !u!114 &6626429713862168402
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1691292736946054389}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3b58626dc997a147bc8c3eea886d135, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Gear8TeethSpin
-  previousGear: {fileID: 6677690344539103855}
-  gearRatio: 5.75
-  gearAngle: 0
 --- !u!33 &6677690344539103854
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4255,21 +4151,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1469029377486805855}
   m_Mesh: {fileID: -6198721533521619813, guid: 4e57df6dcd71f9a4a8c5709d08f7bf7f, type: 3}
---- !u!114 &6677690344539103855
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1469029377486805855}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09597102276c181469c324d400cb3fbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GearSystem1Spin
-  previousGear: {fileID: 1115455970}
-  gearRatio: 2.75
-  gearAngle: 0
 --- !u!23 &6848919149407877813
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4327,12 +4208,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5848983967442098986}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 3.2934216e-16, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -7.0891605e-11, y: 0.0000000066279235, z: -0.017020237, w: 0.99985516}
+  m_LocalPosition: {x: 0.00019937463, y: 0.000228046, z: -0.00015505568}
+  m_LocalScale: {x: 2.3061275, y: 2.3061275, z: 0.27154434}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1115455969}
+  m_Father: {fileID: 3516535136236942801}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6945415700947044109
 GameObject:
@@ -4344,7 +4225,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4302729760610108375}
   m_Layer: 0
-  m_Name: GearSystemTwo
+  m_Name: GearSystem2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4497,21 +4378,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4610300994892789904}
   m_Mesh: {fileID: 4052389502400989497, guid: 4e57df6dcd71f9a4a8c5709d08f7bf7f, type: 3}
---- !u!114 &7164271150685815262
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4610300994892789904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f8246bf6c7f6c64d9c39d6dea94341a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Gear24Teeth
-  previousGear: {fileID: 6313946220620107198}
-  gearRatio: 1
-  gearAngle: 0
 --- !u!4 &7209258775391884945
 Transform:
   m_ObjectHideFlags: 0
@@ -4535,12 +4401,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1381671562471797421}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 3.2934216e-16, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -7.0891605e-11, y: 0.0000000066279235, z: -0.017020237, w: 0.99985516}
+  m_LocalPosition: {x: 0.00019937463, y: 0.000228046, z: -0.00015505568}
+  m_LocalScale: {x: 2.3061275, y: 2.3061275, z: 0.27154434}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1115455969}
+  m_Father: {fileID: 3516535136236942801}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &7261208959458127857
 MeshRenderer:
@@ -4931,21 +4797,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 9162191504324958098}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7479178784579014803
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1761466264158785766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed860440e3ad73b4f8c4be29ab5885ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SpeedControllerSpin
-  previousGear: {fileID: 7164271150685815262}
-  gearRatio: 24
-  gearAngle: 0
 --- !u!23 &7589067228510888227
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4995,21 +4846,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &7589067228510888228
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3365346307858171924}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 773b32450df4ea749a09453c8e05b5ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GearSystemOneCylinderSpin
-  previousGear: {fileID: 1115455970}
-  gearRatio: 2.75
-  gearAngle: 0
 --- !u!33 &7621471649635609047
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -5082,39 +4918,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.0001228951, y: 0.000049533388, z: 0.00013988439}
   m_Center: {x: 0.0000075773187, y: -0.0000043025643, z: -0.00001185725}
---- !u!54 &7671193815537364499
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3082822128188788900}
-  serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!33 &7693024211862932526
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -5228,28 +5037,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5611057842711396684}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.9723374, y: -0.000000041454943, z: 0.0000000032303058, w: 0.23358105}
+  m_LocalRotation: {x: 0.07768463, y: 0, z: -0, w: 0.996978}
   m_LocalPosition: {x: 0.0000036002962, y: -0.00003986552, z: 0.000025443178}
   m_LocalScale: {x: -0.70969343, y: -0.7096934, z: -0.034962703}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1719168219726316283}
-  m_LocalEulerAnglesHint: {x: 152.984, y: 0, z: 0}
---- !u!114 &7889988916456977534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5611057842711396684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 09597102276c181469c324d400cb3fbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GearSystem1Spin
-  previousGear: {fileID: 1115455970}
-  gearRatio: 2.75
-  gearAngle: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7941370569539066146
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -5289,21 +5083,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5948420081639563388}
   m_Mesh: {fileID: -1295769586719838754, guid: 4e57df6dcd71f9a4a8c5709d08f7bf7f, type: 3}
---- !u!114 &8041606201778313685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5948420081639563388}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49ac1f8dc7fd86a45a9d9b87dc4142e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Gear38TeethSpin
-  previousGear: {fileID: 6626429713862168402}
-  gearRatio: 1
-  gearAngle: 0
 --- !u!4 &8156249915264061953
 Transform:
   m_ObjectHideFlags: 0
@@ -5503,12 +5282,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1444778880255207342}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 3.2934216e-16, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -7.0891605e-11, y: 0.0000000066279235, z: -0.017020237, w: 0.99985516}
+  m_LocalPosition: {x: 0.00019937463, y: 0.000228046, z: -0.00015505568}
+  m_LocalScale: {x: 2.3061275, y: 2.3061275, z: 0.27154434}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1115455969}
+  m_Father: {fileID: 3516535136236942801}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &8528162686027799024
 MeshRenderer:

@@ -5,8 +5,8 @@ public class WinderRootSpin : MonoBehaviour
 {
     public float rotateSpeed = 3f;
     public float returnSpeed = 2f;
-
-    private float currentAngle = 0f;
+    public float currentAngle = 0f;
+    
     private bool returning = false;
     private bool isDragging = false;
 

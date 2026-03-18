@@ -27,17 +27,14 @@ public class GearSystemOneToneCylinderSpin : MonoBehaviour
             gearSpin = false;
         }
 
-        if (previousGear.gearAngle == 0f)
-        {
-            gearAngle = 0f;
-        }
+
 
         if (gearSpin)
         {
             transform.Rotate(0f, 0f, -delta * gearRatio);
             gearAngle = gearAngle - delta * gearRatio;
-        }
 
-        lastValue = newAngle;
+            lastValue = newAngle;
+        }
     }
 }

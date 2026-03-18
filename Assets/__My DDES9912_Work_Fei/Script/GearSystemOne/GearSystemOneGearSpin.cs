@@ -27,10 +27,7 @@ public class GearSystemOneGearSpin : MonoBehaviour
             gearSpin = false;
         }
 
-        if(previousGear.gearAngle == 0f)
-        {
-            gearAngle = 0f;
-        }
+       
         
         if (gearSpin)
         {

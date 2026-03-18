@@ -27,10 +27,7 @@ public class Gear8ToothSpin : MonoBehaviour
             gearSpin = false;
         }
 
-        if (previousGear.gearAngle == 0f)
-        {
-            gearAngle = 0f;
-        }
+         
 
         if (gearSpin)
         {

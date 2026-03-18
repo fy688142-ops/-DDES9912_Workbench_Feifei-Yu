@@ -4,8 +4,8 @@ public class SpeedControllerSpin : MonoBehaviour
 {
     public Gear24ToothSpin previousGear;
     public float gearRatio = 24f;
-    public float gearAngle = 0f;
-
+    
+    private float gearAngle = 0f;
     private float lastValue;
     private bool gearSpin = false;
     void Start()
@@ -27,10 +27,6 @@ public class SpeedControllerSpin : MonoBehaviour
             gearSpin = false;
         }
 
-        if (previousGear.gearAngle == 0f)
-        {
-            gearAngle = 0f;
-        }
 
         if (gearSpin)
         {

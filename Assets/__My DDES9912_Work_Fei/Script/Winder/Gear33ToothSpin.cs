@@ -30,12 +30,6 @@ public class Gear33ToothSpin : MonoBehaviour
         }
 
 
-        if (winder.currentAngle == 0f)
-        {
-            gearSpin = false;
-            gearAngle = 0f;
-        }
-
         if(gearSpin)
         {
             transform.Rotate(0f, 0f, -delta * gearRatio);

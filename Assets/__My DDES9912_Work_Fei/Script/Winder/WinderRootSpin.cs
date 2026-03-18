@@ -3,8 +3,8 @@ using UnityEngine.UIElements;
 
 public class WinderRootSpin : MonoBehaviour
 {
-    public float rotateSpeed = 3f;
-    public float returnSpeed = 2f;
+    public float rotateSpeed = 2f;
+    public float returnSpeed = 15f;
     public float currentAngle = 0f;
     
     private bool returning = false;

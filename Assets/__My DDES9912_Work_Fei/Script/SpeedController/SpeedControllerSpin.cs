@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class SpeedControllerSpin : MonoBehaviour
 {
-    public Gear24TeethSpin previousGear;
+    public Gear24ToothSpin previousGear;
     public float gearRatio = 24f;
     public float gearAngle = 0f;
 

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class GearSystemOneToneCylinderSpin : MonoBehaviour
 {
-    public Gear33TeethSpin previousGear;
+    public Gear33ToothSpin previousGear;
     public float gearRatio = 2.75f;
     public float gearAngle = 0f;
 

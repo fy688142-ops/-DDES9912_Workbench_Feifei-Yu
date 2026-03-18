@@ -1,9 +1,9 @@
 using UnityEngine;
 using System.Collections;
 
-public class CombVibrant : MonoBehaviour
+public class pinTrigger : MonoBehaviour
 {
-    private float hitAngle = 0.6f;    
+    private float hitAngle = 0.6f;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -21,3 +21,4 @@ public class CombVibrant : MonoBehaviour
         }
     }
 }
+

@@ -6,28 +6,12 @@ public class CollisionSound : MonoBehaviour
     public AudioSource windUp;
     public WinderRootSpin winder;
 
-    private bool isTouching = false;
     private float lastValue;
     void Start()
     {
         lastValue = winder.currentAngle;
     }
 
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.name == "SpringSystem")
-        {
-            isTouching = true;
-        }
-    }
-    void OnTriggerExit(Collider other)
-    {
-        if (other.name == "SpringSystem" )
-        {
-            isTouching = false;
-            
-        }
-    }
     void Update()
     {
         float newAngle = winder.currentAngle;

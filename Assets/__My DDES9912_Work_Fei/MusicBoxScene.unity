@@ -304,14 +304,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 430028261}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.5666671, y: -0.4232112, z: -0.56658393, w: -0.4228043}
+  m_LocalRotation: {x: -0.60784465, y: -0.36158547, z: 0.6074372, w: -0.3616643}
   m_LocalPosition: {x: 0.00020408025, y: 0.00022830992, z: -0.0001381984}
   m_LocalScale: {x: 1.735819, y: 3.3981357, z: 1.2171897}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5786860570355864564}
   m_Father: {fileID: 3516535136236942801}
-  m_LocalEulerAnglesHint: {x: -433.486, y: 269.912, z: -179.893}
+  m_LocalEulerAnglesHint: {x: -658.484, y: 269.947, z: -180.024}
 --- !u!114 &430028263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4918,7 +4918,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 110
   m_CollisionDetection: 0
 --- !u!1 &3127915317992976701
 GameObject:
@@ -6301,7 +6301,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 110
   m_CollisionDetection: 0
 --- !u!23 &4027743363741871643
 MeshRenderer:
@@ -6673,7 +6673,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 110
   m_CollisionDetection: 0
 --- !u!23 &4268544026390897670
 MeshRenderer:
@@ -7675,7 +7675,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 110
   m_CollisionDetection: 0
 --- !u!1 &4682753178604305893
 GameObject:
@@ -8447,7 +8447,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 110
   m_CollisionDetection: 0
 --- !u!33 &5068387477985911956
 MeshFilter:
@@ -9577,7 +9577,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 110
   m_CollisionDetection: 0
 --- !u!1 &5837748996725771562
 GameObject:
@@ -10416,7 +10416,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 110
   m_CollisionDetection: 0
 --- !u!1 &6308774411726674705
 GameObject:
@@ -10631,7 +10631,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 110
   m_CollisionDetection: 0
 --- !u!33 &6346269176379649997
 MeshFilter:
@@ -10775,7 +10775,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 110
   m_CollisionDetection: 0
 --- !u!4 &6495595377383437059
 Transform:
@@ -11000,7 +11000,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 110
   m_CollisionDetection: 0
 --- !u!1 &6555928923348595666
 GameObject:
@@ -12372,7 +12372,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 110
   m_CollisionDetection: 0
 --- !u!33 &7216099855872601959
 MeshFilter:
@@ -12976,7 +12976,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 110
   m_CollisionDetection: 0
 --- !u!1 &7323873198885098556
 GameObject:
@@ -13663,7 +13663,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 110
   m_CollisionDetection: 0
 --- !u!1 &7425870480722029252
 GameObject:
@@ -13741,7 +13741,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 110
   m_CollisionDetection: 0
 --- !u!1 &7447272862991698777
 GameObject:
@@ -13934,7 +13934,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 110
   m_CollisionDetection: 0
 --- !u!4 &7479178784579014802
 Transform:
@@ -14404,7 +14404,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 110
   m_CollisionDetection: 0
 --- !u!23 &7649610917664223213
 MeshRenderer:
@@ -14550,8 +14550,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0000697698, y: 0.000042764543, z: 0.000120862285}
-  m_Center: {x: -0.000018985389, y: -0.00000091813206, z: -0.000005266916}
+  m_Size: {x: 0.00012946666, y: 0.000055516004, z: 0.00016107711}
+  m_Center: {x: 0.000010863079, y: -0.0000033427068, z: -0.0000007228318}
 --- !u!33 &7693024211862932526
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -14607,7 +14607,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 110
   m_CollisionDetection: 0
 --- !u!23 &7697147207199953988
 MeshRenderer:
@@ -14829,7 +14829,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 110
   m_CollisionDetection: 0
 --- !u!4 &7762910380988720065
 Transform:
@@ -15017,7 +15017,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 110
   m_CollisionDetection: 0
 --- !u!1 &7818678758293547918
 GameObject:
@@ -15086,7 +15086,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 110
   m_CollisionDetection: 0
 --- !u!23 &7836239268142475035
 MeshRenderer:
@@ -15868,7 +15868,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 110
   m_CollisionDetection: 0
 --- !u!23 &8166821472717074244
 MeshRenderer:
@@ -16578,7 +16578,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 110
   m_CollisionDetection: 0
 --- !u!4 &8496400939038799317
 Transform:
@@ -16864,7 +16864,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 110
   m_CollisionDetection: 0
 --- !u!33 &8630957884768440296
 MeshFilter:
@@ -16929,7 +16929,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 110
   m_CollisionDetection: 0
 --- !u!33 &8669996441144197671
 MeshFilter:
@@ -16986,7 +16986,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 110
   m_CollisionDetection: 0
 --- !u!1 &8690031215587151030
 GameObject:
@@ -17347,7 +17347,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 110
   m_CollisionDetection: 0
 --- !u!23 &8799589756770783893
 MeshRenderer:
@@ -17481,7 +17481,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -18614,7 +18614,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 110
   m_CollisionDetection: 0
 --- !u!4 &9162191504324958098
 Transform:

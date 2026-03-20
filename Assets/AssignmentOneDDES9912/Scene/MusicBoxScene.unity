@@ -287,7 +287,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 430028262}
-  - component: {fileID: 430028265}
   - component: {fileID: 430028263}
   m_Layer: 0
   m_Name: SpringRoot
@@ -327,33 +326,6 @@ MonoBehaviour:
   rotateSpeed: 2
   returnSpeed: 15
   currentAngle: 0
---- !u!54 &430028265
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 430028261}
-  serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 1
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &941283178
 GameObject:
   m_ObjectHideFlags: 0
@@ -1252,7 +1224,7 @@ GameObject:
   - component: {fileID: 1840908902225743520}
   - component: {fileID: 8934535734724901032}
   m_Layer: 0
-  m_Name: Cover
+  m_Name: Casing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1940,7 +1912,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3516535136236942801}
   m_Layer: 0
-  m_Name: Winder
+  m_Name: DriveSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4421,7 +4393,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f3f60bef99355d14691db219aa8ad931, type: 2}
+  - {fileID: 2100000, guid: b189fc0ec06715f408d1652d6728d309, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4831,7 +4803,6 @@ GameObject:
   - component: {fileID: 5786860570355864564}
   - component: {fileID: 3663912962983185669}
   - component: {fileID: 7671193815537364496}
-  - component: {fileID: 7671193815537364499}
   - component: {fileID: 7671193815537364500}
   m_Layer: 0
   m_Name: SpringSystem
@@ -10325,7 +10296,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9ab5487088addc64dafe0a62356183ff, type: 2}
+  - {fileID: 2100000, guid: 10e7698e0cf5e644294c22a20a2c70d6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12602,7 +12573,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9ab5487088addc64dafe0a62356183ff, type: 2}
+  - {fileID: 2100000, guid: 10e7698e0cf5e644294c22a20a2c70d6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14504,33 +14475,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!54 &7671193815537364499
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3082822128188788900}
-  serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!65 &7671193815537364500
 BoxCollider:
   m_ObjectHideFlags: 0

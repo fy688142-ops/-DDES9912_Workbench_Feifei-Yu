@@ -418,7 +418,7 @@ GameObject:
   - component: {fileID: 1464967187}
   - component: {fileID: 1464967188}
   m_Layer: 0
-  m_Name: ToneCylinderRoot
+  m_Name: DrumRoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -604,7 +604,7 @@ GameObject:
   - component: {fileID: 1785433117}
   - component: {fileID: 1785433116}
   m_Layer: 0
-  m_Name: InternalRatchet
+  m_Name: InternalPawls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2481,7 +2481,7 @@ GameObject:
   - component: {fileID: 7230047191058371819}
   - component: {fileID: 7230047191058371820}
   m_Layer: 0
-  m_Name: InternalRatchet.003
+  m_Name: Pawls.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2614,7 +2614,7 @@ GameObject:
   - component: {fileID: 8496400939038799322}
   - component: {fileID: 8496400939038799323}
   m_Layer: 0
-  m_Name: InternalRatchet.002
+  m_Name: Pawls.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3088,7 +3088,7 @@ GameObject:
   - component: {fileID: 7261208959458127857}
   - component: {fileID: 7479178784579014803}
   m_Layer: 0
-  m_Name: SpeedController
+  m_Name: Governor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5709,7 +5709,7 @@ GameObject:
   - component: {fileID: 7941493531775527266}
   - component: {fileID: 7941493531775527267}
   m_Layer: 0
-  m_Name: InternalRatchet.001
+  m_Name: Pawls.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9593,7 +9593,7 @@ GameObject:
   - component: {fileID: 6862228633694745799}
   - component: {fileID: 6862228633694745800}
   m_Layer: 0
-  m_Name: InternalRatchet.004
+  m_Name: Pawls.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16648,7 +16648,7 @@ GameObject:
   - component: {fileID: 5362595468385541828}
   - component: {fileID: 7894585173796039182}
   m_Layer: 0
-  m_Name: ToneCylinderAndPins
+  m_Name: DrumAndPins
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

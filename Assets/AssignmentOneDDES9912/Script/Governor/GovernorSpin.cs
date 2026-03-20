@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class SpeedControllerSpin : MonoBehaviour
+public class GovernorSpin : MonoBehaviour
 {
     public Gear24ToothSpin previousGear;
     public float gearRatio = 24f;

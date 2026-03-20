@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class GearSystemOneToneCylinderSpin : MonoBehaviour
+public class DrumSpin : MonoBehaviour
 {
     public Gear33ToothSpin previousGear;
     public float gearRatio = 2.75f;

@@ -403,7 +403,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c449fcb40e2723b47b1344994900bd9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Gear33TeethController
-  touchingSpring: 0
   winder: {fileID: 430028263}
   gearRatio: 1
   gearAngle: 0

@@ -474,7 +474,7 @@ GameObject:
   - component: {fileID: 4731424083571104669}
   m_Layer: 8
   m_Name: EZPZ Player Flat Screen WASD
-  m_TagString: Player
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3191,7 +3191,7 @@ GameObject:
   - component: {fileID: 9139466781935511427}
   m_Layer: 5
   m_Name: clipart510261_2 (2)
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3541,7 +3541,7 @@ GameObject:
   - component: {fileID: 8037485564865329410}
   m_Layer: 5
   m_Name: FingerClickable
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

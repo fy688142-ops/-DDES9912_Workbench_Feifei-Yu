@@ -5,14 +5,14 @@ public class GhostSway : MonoBehaviour
     // Start position
     private Vector3 startPosition;
 
-    // Left-right distance
-    public float swayDistance = 0.5f;
+    // Half circle width
+    public float radiusX = 0.5f;
 
-    // Up-down distance
-    public float floatDistance = 0.2f;
+    // Half circle height
+    public float radiusY = 0.3f;
 
     // Movement speed
-    public float speed = 2f;
+    public float speed = 1f;
 
     void Start()
     {
@@ -22,10 +22,12 @@ public class GhostSway : MonoBehaviour
 
     void Update()
     {
-        // Make the ghost sway up, down, left, and right
-        float x = Mathf.Sin(Time.time * speed) * swayDistance;
+        // Loop angle from 0 to PI
+        float angle = Mathf.PingPong(Time.time * speed, Mathf.PI);
 
-        float y = Mathf.Sin(Time.time * speed * 1.5f) * floatDistance;
+        // Half-circle movement
+        float x = -(1f - Mathf.Cos(angle)) * radiusX;
+        float y = -Mathf.Sin(angle) * radiusY;
 
         transform.position = startPosition + new Vector3(x, y, 0f);
     }

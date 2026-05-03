@@ -15,7 +15,7 @@ public class Ghost : MonoBehaviour
     public float highIntensity = 10f;
 
     // Blink speed
-    public float speed = 0.2f;
+    public float speed = 1f;
 
     void Start()
     {

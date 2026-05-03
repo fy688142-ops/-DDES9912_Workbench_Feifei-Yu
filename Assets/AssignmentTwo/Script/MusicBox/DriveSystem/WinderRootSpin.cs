@@ -8,7 +8,7 @@ using System.Collections;
 public class WinderRootSpin : MonoBehaviour
 {
     // Voice audio
-    public AudioSource voiceAudio;
+    public AudioSource ghostVoice;
    
     float targetAngle = 200f;
     float duration = 2f;
@@ -32,11 +32,14 @@ public class WinderRootSpin : MonoBehaviour
 
     IEnumerator StartAfterVoice()
     {
-        // Wait until voice ends
-        yield return new WaitForSeconds(voiceAudio.clip.length);
+        
+        yield return new WaitUntil(() => ghostVoice.isPlaying);
+
+        
+        yield return new WaitUntil(() => !ghostVoice.isPlaying);
 
         // Wait one more second
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(3f);
 
         float startAngle = currentAngle;
         // Auto wind to 720 degrees

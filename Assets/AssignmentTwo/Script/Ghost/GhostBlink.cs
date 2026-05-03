@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Ghost : MonoBehaviour
+public class GhostBlink : MonoBehaviour
 {
     // Object material
     private Material mat;
@@ -9,10 +9,10 @@ public class Ghost : MonoBehaviour
     private Color emissionColor;
 
     // Min brightness
-    public float lowIntensity = 0.4f;
+    public float lowIntensity = 0.1f;
 
     // Max brightness
-    public float highIntensity = 10f;
+    public float highIntensity = 1.5f;
 
     // Blink speed
     public float speed = 1f;

@@ -14,11 +14,13 @@ public class HandRotation : MonoBehaviour
 
     IEnumerator VoiceThenMoveHand()
     {
-        // Play voice
-        ghostVoice.Play();
+        yield return new WaitUntil(() => ghostVoice.isPlaying);
 
-        // Wait until voice ends
-        yield return new WaitForSeconds(ghostVoice.clip.length);
+
+        yield return new WaitUntil(() => !ghostVoice.isPlaying);
+
+
+        yield return new WaitForSeconds(2f);
 
         // Rotate hand
         float time = 0f;

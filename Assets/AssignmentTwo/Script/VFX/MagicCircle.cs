@@ -20,7 +20,7 @@ public class MagicCircle : MonoBehaviour
     public float speed = 0.05f;
 
     private Material mat;
-    private float radius = 0f;
+    public float radius = 0f;
     private float lastValue;
 
     private bool gearSpin = true;
@@ -28,7 +28,6 @@ public class MagicCircle : MonoBehaviour
     private bool expand = false;
     private bool soundPlayed = false;
     public AudioSource magicSound;
-
 
     void Start()
     {
@@ -85,6 +84,7 @@ public class MagicCircle : MonoBehaviour
             if (radius >= maxRadius)
             {
                 expand = false;
+               
             }
         }
     }

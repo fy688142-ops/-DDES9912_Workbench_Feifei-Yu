@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Bulb : MonoBehaviour
 {
-    public GameObject yellowBulb;
+    public GameObject purpleBulb;
     public GameObject redBulb;
     public Light spotLight;
 
@@ -12,13 +12,13 @@ public class Bulb : MonoBehaviour
         if(spotLight.enabled == false)
         {
             redBulb.SetActive(false);
-            yellowBulb.SetActive(true);
+            purpleBulb.SetActive(true);
         }
 
         if (spotLight.enabled == true)
         {
             redBulb.SetActive(true);
-            yellowBulb.SetActive(false);
+            purpleBulb.SetActive(false);
         }
     }
 }

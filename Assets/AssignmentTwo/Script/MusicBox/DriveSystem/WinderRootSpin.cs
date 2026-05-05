@@ -42,7 +42,7 @@ public class WinderRootSpin : MonoBehaviour
         yield return new WaitForSeconds(3f);
 
         float startAngle = currentAngle;
-        // Auto wind to 720 degrees
+        // Auto wind to 200 degrees
         while (time < duration)
         {
             time += Time.deltaTime;
@@ -63,8 +63,7 @@ public class WinderRootSpin : MonoBehaviour
             yield return null;
         }
 
-        currentAngle = 200f;
-
+        currentAngle = targetAngle;
         // Start returning
         returning = true;
     }
@@ -133,9 +132,8 @@ public class WinderRootSpin : MonoBehaviour
             transform.Rotate(deltaBack, 0f, 0f);
 
             // Stop returning when fully reset
-            if (Mathf.Approximately(currentAngle, 0f))
+            if (currentAngle == 0f)
             {
-                currentAngle = 0f;
                 returning = false;
             }
        

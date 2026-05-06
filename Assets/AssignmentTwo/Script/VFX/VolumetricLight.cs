@@ -7,11 +7,13 @@ public class VolumetricLight : MonoBehaviour
 
     void Update()
     {
+        // If the spotlight is off, the volumetric light is off
         if (spotLight.enabled == false)
         {
             volumetricLight.enabled = false;
         }
 
+        // If the spotlight is on, the volumetric light is on
         if (spotLight.enabled == true)
         {
             volumetricLight.enabled = true;

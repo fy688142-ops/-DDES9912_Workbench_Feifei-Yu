@@ -7,22 +7,19 @@ public class HandRotation : MonoBehaviour
 
     void Start()
     {
-        transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
-
-        StartCoroutine(VoiceThenMoveHand());
+        StartCoroutine(MoveHand());
     }
 
-    IEnumerator VoiceThenMoveHand()
+    IEnumerator MoveHand()
     {
+        // Wait until the ghost voice finishes playing
         yield return new WaitUntil(() => ghostVoice.isPlaying);
-
 
         yield return new WaitUntil(() => !ghostVoice.isPlaying);
 
-
         yield return new WaitForSeconds(2f);
 
-        // Rotate hand
+        // Raise the hand
         float time = 0f;
         float duration = 1f;
 
@@ -36,12 +33,13 @@ public class HandRotation : MonoBehaviour
             yield return null;
         }
 
+        // Make sure the hand reaches the final raised position
         transform.localRotation = Quaternion.Euler(-105.444f, 0f, 0f);
 
-        // Wait 2 seconds
+        // Keep the hand raised for a short time
         yield return new WaitForSeconds(2.5f);
 
-        // Lower hand
+        // Lower the hand back down
         time = 0f;
 
         while (time < duration)
@@ -53,7 +51,5 @@ public class HandRotation : MonoBehaviour
 
             yield return null;
         }
-
-        transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
     }
 }

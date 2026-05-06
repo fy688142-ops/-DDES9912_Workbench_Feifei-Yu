@@ -3,7 +3,7 @@ using System.Collections;
 public class NewMonoBehaviourScript : MonoBehaviour
 {
     public Light spotLight;
-    public AudioSource windUp;
+    public AudioSource musicBox;
     public AudioSource lightSound;
     void Start()
     {
@@ -25,8 +25,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
         spotLight.enabled = true;
 
         // Wait until music box starts playing
-        yield return new WaitUntil(() => windUp.isPlaying);
-        yield return new WaitUntil(() => !windUp.isPlaying);
+        yield return new WaitUntil(() => musicBox.isPlaying);
 
         // Hide light again
         spotLight.enabled = false;

@@ -5,10 +5,10 @@ public class GhostSway : MonoBehaviour
     // Start position
     private Vector3 startPosition;
 
-    // Half circle width
+    // Width
     public float radiusX = 0.5f;
 
-    // Half circle height
+    // Height
     public float radiusY = 0.3f;
 
     // Movement speed
@@ -22,13 +22,14 @@ public class GhostSway : MonoBehaviour
 
     void Update()
     {
-        // Loop angle from 0 to PI
+        // Creates a repeating angle value between 0 and PI over time
         float angle = Mathf.PingPong(Time.time * speed, Mathf.PI);
 
-        // Half-circle movement
+        // Calculate the X and Y position based on movement
         float x = -(1f - Mathf.Cos(angle)) * radiusX;
         float y = -Mathf.Sin(angle) * radiusY;
 
+        // Update the object's position
         transform.position = startPosition + new Vector3(x, y, 0f);
     }
 }

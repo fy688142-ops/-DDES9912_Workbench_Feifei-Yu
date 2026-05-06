@@ -6,15 +6,16 @@ public class Bulb : MonoBehaviour
     public GameObject redBulb;
     public Light spotLight;
 
-    // Update is called once per frame
     void Update()
     {
-        if(spotLight.enabled == false)
+        // If the spotlight is off, show the purple bulb
+        if (spotLight.enabled == false)
         {
             redBulb.SetActive(false);
             purpleBulb.SetActive(true);
         }
 
+        // If the spotlight is on, show the red bulb
         if (spotLight.enabled == true)
         {
             redBulb.SetActive(true);

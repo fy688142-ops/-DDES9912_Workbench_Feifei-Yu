@@ -4,6 +4,8 @@ using System.Collections;
 public class GhostVoice : MonoBehaviour
 {
     public AudioSource ghostVoice;
+
+    // Sound will play after four seconds
     void Start()
     {
         ghostVoice.Stop();

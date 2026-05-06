@@ -8,19 +8,22 @@ public class DoorStatus : MonoBehaviour
     public TMP_Text doorStatus;
 
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        // Set the initial door status to locked
         doorStatus.text = "Door Status: Locked";
+        
         StartCoroutine(OpenDoor());
     }
 
     IEnumerator OpenDoor()
     {
+        // Update when the door opening sound starts playing
         yield return new WaitUntil(() => doorOpenSound.isPlaying);
 
         doorStatus.text = "Door Status: Opening";
 
+        // Update when the door opening sound finishes
         yield return new WaitUntil(() => !doorOpenSound.isPlaying);
 
         doorStatus.text = "Door Status: Open";

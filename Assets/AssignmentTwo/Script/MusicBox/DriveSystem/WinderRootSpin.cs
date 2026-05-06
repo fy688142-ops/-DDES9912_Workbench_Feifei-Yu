@@ -32,13 +32,14 @@ public class WinderRootSpin : MonoBehaviour
 
     IEnumerator StartAfterVoice()
     {
-        
+
+        // Wait until the ghost voice finishes
         yield return new WaitUntil(() => ghostVoice.isPlaying);
 
         
         yield return new WaitUntil(() => !ghostVoice.isPlaying);
 
-        // Wait one more second
+        // Wait for a while
         yield return new WaitForSeconds(3f);
 
         float startAngle = currentAngle;

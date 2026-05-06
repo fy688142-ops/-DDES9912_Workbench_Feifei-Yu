@@ -20,6 +20,7 @@ public class Door : MonoBehaviour
         // Wait until the music stops
         yield return new WaitUntil(() => !lullabyAudio.isPlaying);
 
+        // Play the door open sound
         doorOpenSound.Play();
 
         // Open the door

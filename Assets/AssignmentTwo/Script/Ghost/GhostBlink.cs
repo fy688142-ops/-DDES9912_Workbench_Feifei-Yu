@@ -37,7 +37,7 @@ public class GhostBlink : MonoBehaviour
         // Smoothly interpolate between lowIntensity and highIntensity
         float intensity = Mathf.Lerp(lowIntensity, highIntensity, t);
 
-        // Apply the emission color with the calculated intensity
+        // Apply the emission color with the intensity
         mat.SetColor("_EmissionColor", emissionColor * intensity);
     }
 }

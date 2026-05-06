@@ -3,24 +3,31 @@ using UnityEngine;
 
 public class MagicCircle : MonoBehaviour
 {
-    // Gear to check
+    // Used gear to check if the music box is playing music.
     public Gear38ToothSpin previousGear;
 
     // Magic circle renderer
     public SpriteRenderer magicCircleRenderer;
 
+    // Magic circle GameObject
     public GameObject magicCircle;
-    public float rotateSpeed = 30f;
 
+    // Rotation speed of the magic circle
+    public float rotateSpeed = 30f;
 
     // Max radius
     public float maxRadius = 0.5f;
 
-    // Grow speed
+    // Expand speed
     public float speed = 0.05f;
 
+    // Material used by the magic circle renderer
     private Material mat;
+
+    // Current radius value of the magic circle
     public float radius = 0f;
+
+    // Stores the previous gear angle for comparison
     private float lastValue;
 
     private bool gearSpin = true;
@@ -31,6 +38,7 @@ public class MagicCircle : MonoBehaviour
 
     void Start()
     {
+        // Get the material from the magic circle renderer
         mat = magicCircleRenderer.material;
 
         // Start from invisible
@@ -40,17 +48,19 @@ public class MagicCircle : MonoBehaviour
         // Save initial gear angle
         lastValue = previousGear.gearAngle;
 
+        // Hide the magic circle object at the beginning
         magicCircle.SetActive(false);
 
     }
     void Update()
     {
+        // Check whether the music box gear has started rotating
         if (gearSpin == true)
         {
             float newAngle = previousGear.gearAngle;
             float delta = Mathf.DeltaAngle(lastValue, newAngle);
 
-
+            // Allow the magic circle to appear and expand if music box is playing music
             if (delta < 0f)
             {
                 gearSpin = false;
@@ -58,9 +68,11 @@ public class MagicCircle : MonoBehaviour
                 expand = true;
             }
 
+            // Store current angle for the next frame
             lastValue = newAngle;
         }
 
+        // Show the magic circle and play the magic sound
         if (appear)
         {
             magicCircle.SetActive(true);
@@ -71,7 +83,7 @@ public class MagicCircle : MonoBehaviour
             }
         }
 
-        // If gear is moving
+        // Expand and rotate the magic circle
         if (expand)
         {
             radius += speed * Time.deltaTime;
@@ -81,6 +93,7 @@ public class MagicCircle : MonoBehaviour
             magicCircle.SetActive(true);
             magicCircle.transform.Rotate(0f, 0f, rotateSpeed * Time.deltaTime);
 
+            // Stop expanding when the maximum radius is reached
             if (radius >= maxRadius)
             {
                 expand = false;

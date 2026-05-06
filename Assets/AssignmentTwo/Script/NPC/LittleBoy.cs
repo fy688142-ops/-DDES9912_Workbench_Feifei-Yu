@@ -17,10 +17,8 @@ public class LittleBoy : MonoBehaviour
 
     IEnumerator BoyAction()
     {
-        // Wait until the music starts
+        // Wait until the door open
         yield return new WaitUntil(() => doorOpenSound.isPlaying);
-
-        // Wait until the music stops
         yield return new WaitUntil(() => !doorOpenSound.isPlaying);
 
         // Boy turns around

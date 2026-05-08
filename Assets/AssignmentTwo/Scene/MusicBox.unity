@@ -10699,13 +10699,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 638332508}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.013147471, y: -0.051503345, z: -0.013362618, w: 0.9984969}
+  m_LocalRotation: {x: 0.013573465, y: -0.019130543, z: -0.0129296975, w: 0.99964124}
   m_LocalPosition: {x: 0.08600059, y: 0.0009996081, z: -0.20299627}
   m_LocalScale: {x: 1.5737085, y: 1.5790788, z: 0.81160283}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 720900707}
-  m_LocalEulerAnglesHint: {x: 1.426, y: -5.925, z: -1.607}
+  m_LocalEulerAnglesHint: {x: 1.527, y: -2.213, z: -1.512}
 --- !u!199 &638332510
 ParticleSystemRenderer:
   serializedVersion: 7
@@ -10869,7 +10869,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 15.5
+      scalar: 13.42
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -10922,7 +10922,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.2
+      scalar: 0.25
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -11418,7 +11418,7 @@ ParticleSystem:
     serializedVersion: 6
     enabled: 1
     type: 4
-    angle: 8
+    angle: 4
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
@@ -35874,7 +35874,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 12
   m_Type: 1
-  m_Color: {r: 0.5537557, g: 0.8328358, b: 0.9622642, a: 1}
+  m_Color: {r: 0.17647058, g: 0.33289224, b: 0.72156864, a: 1}
   m_Intensity: 1.31
   m_Range: 10
   m_SpotAngle: 30
@@ -42365,7 +42365,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Hint: Turn the music box to open the door
+  m_text: 'Hint: Wind up the music box to escape
 
 
 '
@@ -47268,7 +47268,7 @@ GameObject:
   - component: {fileID: 2913727830313677093}
   - component: {fileID: 2913727830313677094}
   m_Layer: 0
-  m_Name: CeilingLight
+  m_Name: Chandelier
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

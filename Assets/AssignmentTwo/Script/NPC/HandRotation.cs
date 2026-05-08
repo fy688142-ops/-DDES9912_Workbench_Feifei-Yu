@@ -33,8 +33,6 @@ public class HandRotation : MonoBehaviour
             yield return null;
         }
 
-        // Make sure the hand reaches the final raised position
-        transform.localRotation = Quaternion.Euler(-105.444f, 0f, 0f);
 
         // Keep the hand raised for a short time
         yield return new WaitForSeconds(2.5f);

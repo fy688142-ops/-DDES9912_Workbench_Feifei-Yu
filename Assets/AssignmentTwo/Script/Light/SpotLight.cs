@@ -15,7 +15,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
         // Hide light at start
         spotLight.enabled = false;
 
-        // Wait 7 seconds
+        // Wait some seconds
         yield return new WaitForSeconds(11.6f);
 
         lightSound.Play();

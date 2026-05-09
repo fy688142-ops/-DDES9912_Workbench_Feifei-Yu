@@ -1,6 +1,6 @@
 using UnityEngine;
 using System.Collections;
-public class SpotLight : MonoBehaviour
+public class NewMonoBehaviourScript : MonoBehaviour
 {
     public Light spotLight;
     public AudioSource musicBox;

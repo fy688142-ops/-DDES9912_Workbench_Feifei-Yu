@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class HandRotation : MonoBehaviour
+public class LittleGirl : MonoBehaviour
 {
     public AudioSource ghostVoice;
 
